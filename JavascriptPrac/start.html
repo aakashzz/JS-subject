@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Start Game </title>
+</head>
+<style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 50px auto;      
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#options-container {
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#quiz-container2{
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+</style>
+<body>
+      <div id="quiz-container">
+    <h1>Random Quiz Game</h1>
+    <p id="question"></p>
+    <div id="options-container"></div>
+    <button id="strt-btn" onclick="RunProg()">Start Game</button>
+</div>
+</body>
+<script>
+     const start_btn = document.getElementById('strt-btn');
+     function RunProg(){
+          let link = '/JavascriptPrac/quiz.html'
+          window.open(link,"_self")
+     }
+</script>
+</html>

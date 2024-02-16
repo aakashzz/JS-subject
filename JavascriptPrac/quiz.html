@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quiz Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#options-container {
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}   
+.showDiv{
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.ques-p{
+    font-size: large;
+    font-weight: bold;
+    padding-left: 8px;
+    padding-top: -20px;
+}
+.option-div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+#show-btn{
+    /* cursor: not-allowed; */
+}
+
+
+</style>
+<body>
+
+    <div id="quiz-container">
+        <h1>Random Quiz Game</h1>
+        <button id="show-btn" onclick="ShowQuestion()" >Show Question</button>
+    </div>
+    <div id="quiz-container2">
+        <!-- result in show -->
+    </div>
+     <!-- <button id="submit" onclick="ShowAnswer()">Submit</button> -->
+     <div id="showSubmitBtn">
+        <!-- submit btn show this container -->
+     </div>
+
+<script src="quiz.js"></script>
+
+</body>
+</html>
